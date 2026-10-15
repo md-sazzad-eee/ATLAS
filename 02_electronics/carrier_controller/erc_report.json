@@ -1,0 +1,52 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-14T22:53:31",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/331d49d0-a041-5ae3-88fa-96e77e04ebe1",
+            "violations": [
+                {
+                    "description": "The current configuration does not include the symbol library 'atlas_extra'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [TPS3823-xxDBV]",
+                            "pos": {
+                                "x": 0.4826,
+                                "y": 1.4478
+                            },
+                            "uuid": "5092e15e-c9e8-5aff-b1cd-c97e5b0bc567"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "atlas_carrier_ctrl.kicad_sch"
+}

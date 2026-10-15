@@ -1,0 +1,31 @@
+{
+ "startup_1A": {
+  "peak_A": 1.117,
+  "final_A": 1.0,
+  "settle_2pct_ms": 11.1,
+  "cv_setpoint_V": 8.344
+ },
+ "step_0p5_to_1A": {
+  "I_before": 0.5,
+  "overshoot_pct": -0.0,
+  "settle_2pct_ms": 0.15
+ },
+ "cc_to_cv": {
+  "soc_at_cv_entry": 0.85,
+  "pack_terminal_max_V": 8.03,
+  "final_current_A": 0.03,
+  "cv_out_V": 8.339
+ },
+ "bad_contact_170mohm": {
+  "final_A": 0.862,
+  "peak_A": 0.863
+ },
+ "cc_loop_crossover_kHz": 3.36,
+ "full_charge_from_10pct": {
+  "cc_ends_at_soc": 0.623,
+  "cc_minutes": 78.5,
+  "terminate_at_soc": 0.862,
+  "total_minutes": 181.0
+ },
+ "assumptions": "averaged model; TPS54202 current-mode loop approximated by Kv/tau_i; LMV358 ideal within rails"
+}

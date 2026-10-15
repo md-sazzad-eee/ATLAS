@@ -1,0 +1,92 @@
+{
+  "agent": [
+    {
+      "case": "Flat accel to v_max",
+      "force_N": 0.95316,
+      "T_wheel_Nm": 0.01548885,
+      "T_req_Nm": 0.0309777,
+      "rpm": 58.764902064699818,
+      "P_mech_W": 0.095316000000000012,
+      "P_elec_W": 0.22694285714285717,
+      "I_motor_A": 0.03782380952380953,
+      "traction_ok": true
+    },
+    {
+      "case": "Floor slope at v_max",
+      "force_N": 0.96877488338586015,
+      "T_wheel_Nm": 0.015742591855020228,
+      "T_req_Nm": 0.031485183710040457,
+      "rpm": 58.764902064699818,
+      "P_mech_W": 0.096877488338586032,
+      "P_elec_W": 0.23066068652044294,
+      "I_motor_A": 0.038443447753407155,
+      "traction_ok": true
+    },
+    {
+      "case": "Dock ramp climb (docking speed)",
+      "force_N": 3.0329790309818141,
+      "T_wheel_Nm": 0.049285909253454482,
+      "T_req_Nm": 0.098571818506908965,
+      "rpm": 14.691225516174955,
+      "P_mech_W": 0.075824475774545361,
+      "P_elec_W": 0.18053446612986992,
+      "I_motor_A": 0.030089077688311653,
+      "traction_ok": true
+    }
+  ],
+  "carrier": [
+    {
+      "case": "Flat accel to v_max (loaded)",
+      "force_N": 7.567870000000001,
+      "T_wheel_Nm": 0.094598375000000012,
+      "T_req_Nm": 0.18919675000000002,
+      "rpm": 76.394372684109769,
+      "P_mech_W": 0.7567870000000001,
+      "P_elec_W": 1.8018738095238098,
+      "I_motor_A": 0.180187380952381,
+      "traction_ok": true
+    },
+    {
+      "case": "Floor slope at v_max (loaded)",
+      "force_N": 8.7997051907548975,
+      "T_wheel_Nm": 0.10999631488443623,
+      "T_req_Nm": 0.21999262976887246,
+      "rpm": 76.394372684109769,
+      "P_mech_W": 0.87997051907548984,
+      "P_elec_W": 2.09516790256069,
+      "I_motor_A": 0.209516790256069,
+      "traction_ok": true
+    },
+    {
+      "case": "Skid-steer turn in place (loaded)",
+      "force_N": 25.437057499999998,
+      "T_wheel_Nm": 0.31796321875,
+      "T_req_Nm": 0.6359264375,
+      "rpm": 28.647889756541158,
+      "P_mech_W": 0.95388965624999988,
+      "P_elec_W": 2.2711658482142854,
+      "I_motor_A": 0.22711658482142855,
+      "traction_ok": true
+    }
+  ],
+  "energy_agent": {
+    "P_drive_cruise_W": 0.16817142857142858,
+    "P_scout_W": 3.984085714285714,
+    "P_research_W": 1.8840857142857144,
+    "E_pack_Wh": 18.5,
+    "E_usable_Wh": 14.8,
+    "t_scout_min": 222.88677093866312,
+    "t_research_min": 471.3161366634821
+  },
+  "energy_carrier": {
+    "P_drive_cruise_W": 3.0551142857142857,
+    "P_avg_W": 17.022045714285714,
+    "E_pack_Wh": 128,
+    "E_usable_Wh": 108.8,
+    "t_min": 383.50267115787324,
+    "E_charge_agents_Wh": 43.529411764705884,
+    "t_with_charging_min": 230.06842772317049,
+    "P_charge_peak_W": 19.764705882352942
+  },
+  "carrier_loaded_mass_kg": 10.9
+}

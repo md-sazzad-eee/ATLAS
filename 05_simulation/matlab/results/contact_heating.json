@@ -1,0 +1,9 @@
+{
+  "theta_K_per_W": 155.63201004673755,
+  "T_design_C": 47.781600502336879,
+  "T_at_rating_C": 71.126402009347515,
+  "T_contaminated_C": 176.95616884112906,
+  "I_PLA_limit_A": 1.3883889997251673,
+  "I_PLA_limit_contaminated_A": 0.661888485279028,
+  "assumptions": "all heat into pin, adiabatic board edge, h=10 W/m2K, Tamb=40 C, Rpin=20 mOhm"
+}

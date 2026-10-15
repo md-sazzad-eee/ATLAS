@@ -1,0 +1,105 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-13T17:15:03",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "atlas_agent_ctrl.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2420 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 100.0
+                    },
+                    "uuid": "541dcd66-2aa0-4421-8998-059aac259ebe"
+                },
+                {
+                    "description": "Track [/ENC_R_B] on F.Cu, length 1.5228 mm",
+                    "pos": {
+                        "x": 208.5562,
+                        "y": 133.0525
+                    },
+                    "uuid": "1876fb69-f6b5-410d-8025-e484aee87583"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2420 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 100.0
+                    },
+                    "uuid": "541dcd66-2aa0-4421-8998-059aac259ebe"
+                },
+                {
+                    "description": "Track [/ENC_R_B] on F.Cu, length 24.3902 mm",
+                    "pos": {
+                        "x": 209.633,
+                        "y": 134.1293
+                    },
+                    "uuid": "e50de7fd-77a4-40e0-8fa5-4510ca6f502d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2420 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 100.0
+                    },
+                    "uuid": "541dcd66-2aa0-4421-8998-059aac259ebe"
+                },
+                {
+                    "description": "Track [/ENC_R_B] on F.Cu, length 3.6116 mm",
+                    "pos": {
+                        "x": 209.633,
+                        "y": 158.5195
+                    },
+                    "uuid": "e810ab9c-7e10-4cd8-80c4-ff4c85848b9f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        }
+    ]
+}

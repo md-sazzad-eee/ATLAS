@@ -1,0 +1,52 @@
+# ---- scratch / leftovers
+_sync/
+_to_delete/
+**/dbg/
+02_electronics/carrier_controller/dbg*_*.svg
+02_electronics/c_mac.svg
+.DS_Store
+
+# ---- KiCad: generated / local state (regenerate with tools/run_board_flow.sh)
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+*.dsn
+*.ses
+*.ses.gnd.ses
+*.net
+freerouting.log
+drc_placement.json
+drc_tmp.json
+route_geom.json
+route_new.json
+
+# ---- ROS 2 workspace: not published yet
+04_ros2_ws/
+
+# ---- Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ---- firmware builds
+.pio/
+**/build/
+sdkconfig
+sdkconfig.old
+*.o
+*.out
+
+# ---- MATLAB / Simulink / COMSOL
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.class
+*.class.status
+*.mph.lock
+batch.log
+addplots.log
+*.FCBak
+*.log
+05_simulation/comsol/ContactHeating_*_pg?.png

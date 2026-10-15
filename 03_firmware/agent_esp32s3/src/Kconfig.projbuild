@@ -1,0 +1,20 @@
+menu "ATLAS Agent"
+    config ATLAS_AGENT_SCOUT
+        bool "This agent is the Scout (Pi Zero 2 W camera module fitted)"
+        default y
+    config ATLAS_WIFI_SSID
+        string "Carrier Wi-Fi SSID"
+        default "atlas-carrier"
+    config ATLAS_WIFI_PASS
+        string "Carrier Wi-Fi password"
+        default "change-me-please"
+    config ATLAS_CARRIER_IP
+        string "Carrier (agent_bridge) IPv4 address"
+        default "192.168.50.1"
+    config ATLAS_CARRIER_PORT
+        int "agent_bridge UDP port for this agent (scout 47001, research 47002)"
+        default 47001
+    config ATLAS_SENS_GAIN_X1000
+        int "Research sensor gain x1000 (value = gain * V + offset)"
+        default 1000
+endmenu

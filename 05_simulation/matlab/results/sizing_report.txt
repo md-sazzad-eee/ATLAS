@@ -1,0 +1,29 @@
+ATLAS sizing report  (2026-10-13 17:14)  params v0.1.3
+All values are design requirements derived from proposed targets.
+
+
+=== ATLAS-S agent  (mass 1.20 kg) ===
+Load case                               F [N]   Tw [N.m]  Treq[N.m]     rpm   Pe [W]    I [A]  traction
+Flat accel to v_max                      0.95      0.015      0.031    58.8     0.23     0.04      PASS
+Floor slope at v_max                     0.97      0.016      0.031    58.8     0.23     0.04      PASS
+Dock ramp climb (docking speed)          3.03      0.049      0.099    14.7     0.18     0.03      PASS
+-> Gearmotor spec per wheel: continuous output torque >= 0.099 N.m (1.00 kg.cm) [Dock ramp climb (docking speed)],
+   loaded output speed >= 73 rpm (no-load ~94 rpm at nominal voltage),
+   stall torque >= 0.296 N.m. Driver: continuous >= 1.0 A/ch AND >= measured motor stall current.
+
+=== ATLAS-M carrier  (mass 10.90 kg) ===
+Load case                               F [N]   Tw [N.m]  Treq[N.m]     rpm   Pe [W]    I [A]  traction
+Flat accel to v_max (loaded)             7.57      0.095      0.189    76.4     1.80     0.18      PASS
+Floor slope at v_max (loaded)            8.80      0.110      0.220    76.4     2.10     0.21      PASS
+Skid-steer turn in place (loaded)       25.44      0.318      0.636    28.6     2.27     0.23      PASS
+-> Gearmotor spec per wheel: continuous output torque >= 0.636 N.m (6.48 kg.cm) [Skid-steer turn in place (loaded)],
+   loaded output speed >= 95 rpm (no-load ~122 rpm at nominal voltage),
+   stall torque >= 1.908 N.m. Driver: continuous >= 1.0 A/ch AND >= measured motor stall current.
+
+=== Energy ===
+ATLAS-S  pack 14.8 Wh usable | avg power scout 3.98 W, research 1.88 W
+         runtime scout 223 min, research 471 min  (target 30 min)  -> PASS
+ATLAS-M  pack 108.8 Wh usable | avg power 17.0 W | runtime 384 min (target 60) -> PASS
+         full recharge of 2 agents costs 43.5 Wh = 40% of carrier usable energy
+         runtime if it also fully recharges both agents: 230 min
+         peak dock charge power: 19.8 W

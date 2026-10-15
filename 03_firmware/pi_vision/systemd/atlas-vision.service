@@ -1,0 +1,13 @@
+[Unit]
+Description=ATLAS Scout vision service (AprilTag -> ESP32 over UART)
+After=multi-user.target
+
+[Service]
+User=atlas
+WorkingDirectory=/opt/atlas/pi_vision
+ExecStart=/usr/bin/python3 -m atlas_vision.service --port /dev/serial0
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

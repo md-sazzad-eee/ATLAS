@@ -1,0 +1,9 @@
+Scenario,Expected,Final,Pass,Notes
+nominal dock + undock,0,0,1,I1=1 I2=1 I3=1 max_retries_state=0
+never seats -> FAULT after retries,9,9,1,I1=1 I2=1 I3=1 max_retries_state=1
+latch miss then success,4,4,1,I1=1 I2=1 I3=1 max_retries_state=1
+lock lost in transport -> FAULT,9,9,1,I1=1 I2=1 I3=1 max_retries_state=0
+bad ID -> not docked,-1,1,1,I1=1 I2=1 I3=1 max_retries_state=1
+estop then reset -> IDLE,0,0,1,I1=1 I2=1 I3=1 max_retries_state=0
+latch stuck on undock -> FAULT,9,9,1,I1=1 I2=1 I3=1 max_retries_state=0
+dock cmd while moving ignored,0,0,1,I1=1 I2=1 I3=1 max_retries_state=0

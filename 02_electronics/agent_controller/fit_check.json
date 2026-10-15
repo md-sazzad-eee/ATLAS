@@ -1,0 +1,17 @@
+{
+ "pcb_bbox_mm": [
+  -55.0,
+  55.0,
+  -96.18,
+  -6.0,
+  70.19,
+  82.14
+ ],
+ "inside_inner_envelope": true,
+ "Agent_Wheel_L_min_dist_mm": 5.39,
+ "Agent_Wheel_R_min_dist_mm": 7.0,
+ "Agent_Caster_min_dist_mm": 70.66,
+ "Agent_Docking_Face_min_dist_mm": 20.1,
+ "clearance_to_lid_mm": 17.36,
+ "clearance_above_wheels_mm": 5.19
+}
